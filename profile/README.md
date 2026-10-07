@@ -8,8 +8,7 @@
 
 | Project | What it is | Latest |
 | --- | --- | --- |
-| [kmrs](https://github.com/kmworks/kmrs) | Drop-in, API-compatible reimplementation of the [Komga](https://komga.org) server in Rust — single static binary, no JVM | [![release](https://img.shields.io/github/v/release/kmworks/kmrs)](https://github.com/kmworks/kmrs/releases/latest) [![image](https://img.shields.io/badge/ghcr.io-kmworks%2Fkmrs-blue)](https://github.com/kmworks/kmrs/pkgs/container/kmrs) |
-| [kmweb](https://github.com/kmworks/kmweb) | Web UI for kmrs — bundled in the kmrs docker image | [![release](https://img.shields.io/github/v/release/kmworks/kmweb)](https://github.com/kmworks/kmweb/releases/latest) |
+| [kmrs](https://github.com/kmworks/kmrs) | Drop-in, API-compatible reimplementation of the [Komga](https://komga.org) server in Rust — single static binary with the embedded kmweb UI, no JVM | [![release](https://img.shields.io/github/v/release/kmworks/kmrs)](https://github.com/kmworks/kmrs/releases/latest) [![image](https://img.shields.io/badge/ghcr.io-kmworks%2Fkmrs-blue)](https://github.com/kmworks/kmrs/pkgs/container/kmrs) |
 | [kmreader](https://github.com/kmworks/kmreader) | Full-featured, native Komga client for iOS, macOS, and tvOS | [![release](https://img.shields.io/github/v/release/kmworks/kmreader)](https://github.com/kmworks/kmreader/releases/latest) [![App Store](https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us)](https://apps.apple.com/app/id6755198424) |
 
 ## Try it
@@ -24,7 +23,7 @@ docker run -d \
   ghcr.io/kmworks/kmrs
 ```
 
-Open `http://localhost:25600` — kmweb is bundled and works out of the box — or point any Komga-compatible client at the server.
+Open `http://localhost:25600` — the web UI is built in and works out of the box — or point any Komga-compatible client at the server.
 
 kmrs pairs well with any Komga-compatible client; kmreader pairs with any Komga-compatible server, including the original [komga](https://github.com/gotson/komga).
 
