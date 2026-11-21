@@ -3,7 +3,7 @@
 
   # kmworks
 
-  An open-source, Komga-compatible reading stack for comics, manga, and ebooks: a Rust server with a built-in web UI, and a native Apple client.
+  An open-source, Komga-compatible reading stack for comics, manga, and ebooks: a Rust server with a built-in web UI, plus native Apple and Android clients.
 
   [Website](https://kmworks.date) · [Docs](https://kmworks.date/server/intro) · [Live demo](https://demo.kmworks.date) · [Blog](https://kmworks.date/blog/)
 </div>
@@ -12,6 +12,7 @@
 | --- | --- | --- |
 | [KMServer](https://github.com/kmworks/kmrs) (`kmrs`) | Full-featured drop-in replacement for the [Komga](https://komga.org) server in Rust — same library formats, API, and database, plus smart lists, reading trackers, CJK search, and more. One self-contained binary with the web UI built in, no JVM | [![release](https://img.shields.io/github/v/release/kmworks/kmrs)](https://github.com/kmworks/kmrs/releases/latest) [![image](https://img.shields.io/badge/ghcr.io-kmworks%2Fkmrs-blue)](https://github.com/kmworks/kmrs/pkgs/container/kmrs) |
 | [KMReader](https://github.com/kmworks/kmreader) | Native Komga client for iPhone, iPad, Mac, and Apple TV, with offline downloads and on-device manga translation | [![release](https://img.shields.io/github/v/release/kmworks/kmreader)](https://github.com/kmworks/kmreader/releases/latest) [![App Store](https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us)](https://apps.apple.com/app/id6755198424) |
+| [KMReader for Android](https://github.com/kmworks/kmreader-android) | Native Jetpack Compose Komga client for Android phones and tablets, with DIVINA, EPUB, and PDF readers, offline downloads, and reading trackers | [![release](https://img.shields.io/github/v/release/kmworks/kmreader-android)](https://github.com/kmworks/kmreader-android/releases/latest) [![APK](https://img.shields.io/badge/download-APK-green)](https://github.com/kmworks/kmreader-android/releases/latest) |
 
 ## Try it
 
@@ -30,6 +31,6 @@ Open `http://localhost:25600` — the web UI is built in — or point any Komga-
 
 Already running Komga? Point KMServer at your existing config directory and it upgrades the database in place; the [migration guide](https://kmworks.date/server/migration) covers the switch, and the Java version can still open the result.
 
-KMServer works with any Komga-compatible client, and KMReader works with any Komga 1.20.0+ server, including the original [Komga](https://github.com/gotson/komga).
+KMServer works with any Komga-compatible client, and the KMReader apps work with any Komga 1.20.0+ server, including the original [Komga](https://github.com/gotson/komga). KMReader for Android is distributed as an APK on its [releases page](https://github.com/kmworks/kmreader-android/releases/latest) and runs on Android 9 or newer.
 
 All kmworks projects are MIT licensed. Not affiliated with the Komga project.
